@@ -1,0 +1,28 @@
+1) приветствие
+a= input("введите имя:")
+print ("привет,", a)
+2) Площадь
+a= float(input("ширина:"))
+b= float(input("длинна:"))
+print("Площадь равна", a*b)
+3)сумма чисел
+n= int(input("введите n:"))
+summ=0
+for i in range (n+1):
+    summ+=i
+print(summ)
+4)кол-во секунд
+a,b,c = map(int, input("час минута секунда:").split())
+print ("секунд", (a*3600)+b*60+c)
+5) индекс массы тела
+w, h = map(float,input("вес и рост: ").split())
+print ("BMI=", w/(h**2))
+6) сумма цифр целого числа
+n=int(input("введите число "))
+summ=0
+while n>0:
+    digit=n % 10
+    summ=summ+digit
+    n=n//10
+print("сумма цифр целого числа =", summ)
+
